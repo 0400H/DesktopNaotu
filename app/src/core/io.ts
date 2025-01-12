@@ -20,7 +20,7 @@ export function readText(path: string): string {
 
 //#region 2. write file
 export function writeJson(path: string, json: JSON) {
-  writeText(path, JSON.stringify(json));
+  writeText(path, JSON.stringify(json, null, 2));
 }
 
 export function writeText(path: string, text: string) {

@@ -77,5 +77,6 @@ $(function() {
 });
 
 function openUrl(url: string) {
+  logger.info(`open url ${url}`);
   require("electron").shell.openExternal(url);
 }
